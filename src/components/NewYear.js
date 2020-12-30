@@ -8,14 +8,14 @@ function NewYear() {
     useEffect(()=>{
         setTimeout(()=>{
             setDisplay(true);
-        },4000);
+        },5000);
         setTimeout(()=>{
             alert("Шинэ оны мэнд хүргэеэ хха");
-        },6000);
+        },8000);
     },[]);
     setTimeout(()=>{
         setDisplay(false);
-    },10000);
+    },12000);
 
     return (
         <Components>
