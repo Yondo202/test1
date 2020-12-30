@@ -8,22 +8,20 @@ function NewYear() {
     useEffect(()=>{
         setTimeout(()=>{
             setDisplay(true);
-        },1000);
+        },4000);
+        setTimeout(()=>{
+            alert("Шинэ оны мэнд хүргэеэ хха");
+        },6000);
     },[]);
-    // setTimeout(()=>{
-    //     setDisplay(false);
-    // },6000);
-  
-
-  
+    setTimeout(()=>{
+        setDisplay(false);
+    },10000);
 
     return (
         <Components>
             <div style={{backgroundImage:`url(/h5.jpg)`}} className="ghost">
                 <Snowfall snowflakeCount={300} />
             </div>
-
-            
             {display ?
           (  <div className="Parent">
                 <img className="gif" src="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif" />
